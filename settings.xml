@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default environment" name="Authentication Sample Project" resourceRoot="" soapui-version="6.0.0" abortOnError="false" runType="SEQUENTIAL" id="7d1441f9-9de0-4723-9e80-4c99b2fd5a76" lastOpened="2016-09-20T10:02:28.735+02:00" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>Demonstrates the use of OAuth 2.0 authentication when logging in to web services.</con:description>
+  <con:settings/>
+  <con:vcsConfiguration>
+    <con:vcsName>Git</con:vcsName>
+    <con:repositoryIdentifier>https://github.com/LekalakalaThabo/MySampleSOARepository.git</con:repositoryIdentifier>
+  </con:vcsConfiguration>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:oAuth2ProfileContainer>
+    <con:oAuth2Profile>
+      <con:name>Google Account - desktop client</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:clientID>669184148999-uvb9iqhnaq6h0gju1qhdraf5ds0asaeo.apps.googleusercontent.com</con:clientID>
+      <con:clientSecret>vRl0LylcL1eg4baB7Hcpw5I5</con:clientSecret>
+      <con:authorizationURI>https://accounts.google.com/o/oauth2/auth</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.google.com/o/oauth2/token</con:accessTokenURI>
+      <con:redirectURI>urn:ietf:wg:oauth:2.0:oob</con:redirectURI>
+      <con:accessToken/>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:refreshToken>1/jd8X35NAzELGVTVr4pMI41gTbNtP3LEIY9TGNCI6flw</con:refreshToken>
+      <con:scope>https://www.googleapis.com/auth/tasks.readonly</con:scope>
+      <con:accessTokenExpirationTime>3600</con:accessTokenExpirationTime>
+      <con:accessTokenIssuedTime>1395760374</con:accessTokenIssuedTime>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+    <con:oAuth2Profile>
+      <con:name>Google Account - Browser client</con:name>
+      <con:type>OAuth 2.0</con:type>
+      <con:clientID>669184148999-ucq8m5akbcin8ni253girkijr9vgniii.apps.googleusercontent.com</con:clientID>
+      <con:clientSecret/>
+      <con:authorizationURI>https://accounts.google.com/o/oauth2/auth</con:authorizationURI>
+      <con:accessTokenURI>https://accounts.google.com/o/oauth2/token</con:accessTokenURI>
+      <con:redirectURI>https://www.example.com/oauth2callback</con:redirectURI>
+      <con:accessToken/>
+      <con:accessTokenPosition>HEADER</con:accessTokenPosition>
+      <con:oAuth2Flow>IMPLICIT_GRANT</con:oAuth2Flow>
+      <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
+      <con:scope>https://www.googleapis.com/auth/tasks.readonly</con:scope>
+      <con:accessTokenIssuedTime>1395761967</con:accessTokenIssuedTime>
+      <con:responseType>id_token</con:responseType>
+    </con:oAuth2Profile>
+  </con:oAuth2ProfileContainer>
+  <con:sensitiveInformation/>
+  <con:environment id="3a65b608-7ecd-473a-a591-f5913188359d" name="Test">
+    <con:service type="REST" name="OAuth2 - Desktop client">
+      <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">https://www.googleapis.com</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="OAuth2 - Browser client">
+      <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">https://www.googleapis.com</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="Basic Auth">
+      <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://browserspy.dk</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+  </con:environment>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
