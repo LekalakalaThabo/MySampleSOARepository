@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default environment" name="Authentication Sample Project" resourceRoot="" soapui-version="6.0.0" abortOnError="false" runType="SEQUENTIAL" id="7d1441f9-9de0-4723-9e80-4c99b2fd5a76" lastOpened="2016-09-20T10:02:28.735+02:00" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default environment" name="Authentication Sample Project" resourceRoot="" soapui-version="6.0.0" abortOnError="false" runType="SEQUENTIAL" id="7d1441f9-9de0-4723-9e80-4c99b2fd5a76" lastOpened="2016-09-20T10:19:23.988+02:00" compositeProjectFormat="1.2" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Demonstrates the use of OAuth 2.0 authentication when logging in to web services.</con:description>
-  <con:settings/>
+  <con:settings>
+    <con:setting id="7d1441f9-9de0-4723-9e80-4c99b2fd5a76fileName">Authentication-Sample-Project-soapui-project</con:setting>
+  </con:settings>
   <con:vcsConfiguration>
     <con:vcsName>Git</con:vcsName>
     <con:repositoryIdentifier>https://github.com/LekalakalaThabo/MySampleSOARepository.git</con:repositoryIdentifier>

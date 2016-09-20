@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="8aa78c3a-91f8-455d-890c-5b5f9aaffced" name="Authentication Negative Test Suite TestSuite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f047a20d-f7e3-48cb-a407-326f76a6a581fileName">Authentication-TestSuite</con:setting>
+    <con:setting id="8aa78c3a-91f8-455d-890c-5b5f9aaffcedfileName">Authentication-Negative-Test-Suite-TestSuite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

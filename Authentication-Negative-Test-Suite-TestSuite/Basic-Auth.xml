@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="60998403-27f1-4d96-af02-d039e3139cee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Basic Auth" searchProperties="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9d28764c-a6b8-45e4-907a-eb59b7d65372fileName">Basic-Auth</con:setting>
+    <con:setting id="60998403-27f1-4d96-af02-d039e3139ceefileName">Basic-Auth</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Login - Basic Auth" id="681ec895-ee9e-4ca8-8449-9882ded9d835">
+    <con:settings/>
+    <con:config service="Basic Auth" resourcePath="/password-ok.php" methodName="Password-ok.php" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Login - Basic Auth" mediaType="application/json" id="a3ee0169-0650-44ba-bd6b-a1dd7e67620b">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://browserspy.dk</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://browserspy.dk/password-ok.php</con:originalUri>
+        <con:assertion type="Schema Compliance" id="97eec68b-a7e9-42ea-855f-4ff8ce629a88" name="Schema Compliance">
+          <con:configuration/>
+        </con:assertion>
+        <con:credentials>
+          <con:username>test</con:username>
+          <con:password>test</con:password>
+          <con:domain/>
+          <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+          <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+          <con:preemptive>true</con:preemptive>
+          <con:authType>Preemptive</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="3a65b608-7ecd-473a-a591-f5913188359d">
+            <con:authProfile>Basic</con:authProfile>
+            <con:username>test</con:username>
+            <con:password>test</con:password>
+            <con:preemptive>true</con:preemptive>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
